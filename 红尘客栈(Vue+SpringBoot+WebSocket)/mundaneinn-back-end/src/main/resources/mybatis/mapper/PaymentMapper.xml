@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcx.mapper.PaymentMapper">
+
+    <select id="queryPaymentByUser" resultType="Payment">
+        select * from mi_payment where username=#{username}
+    </select>
+
+    <delete id="deletePaymentById" parameterType="int">
+        delete from mi_payment where id=#{id}
+    </delete>
+</mapper>

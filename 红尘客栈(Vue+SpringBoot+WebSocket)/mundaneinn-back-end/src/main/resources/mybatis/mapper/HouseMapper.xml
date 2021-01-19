@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcx.mapper.HouseMapper">
+    <select id="queryHouseList" resultType="House">
+        select * from mi_house
+        <where>
+            city_and_region like "%"#{cityName}"%"
+            <if test="rentalType != null">
+                and rental_type=#{rentalType}
+            </if>
+            <if test="bedNumber != null">
+                and bed_number=#{bedNumber}
+            </if>
+            <if test="peopleNumber != null">
+                and people_number<![CDATA[ >= ]]>#{peopleNumber}
+            </if>
+            <if test="houseType != null">
+                and house_type=#{houseType}
+            </if>
+            <if test="housePrice != null">
+                and house_price<![CDATA[ <= ]]>#{housePrice}
+            </if>
+            <if test="chooseDate != null">
+                and  TIMESTAMPDIFF(day,SUBSTRING_INDEX(SUBSTRING_INDEX(choose_date,',',-2),',',1), SUBSTRING_INDEX(SUBSTRING_INDEX(#{chooseDate},',',-2),',',1)) <![CDATA[ >= ]]> 0
+                and TIMESTAMPDIFF(day,SUBSTRING_INDEX(SUBSTRING_INDEX(choose_date,',',-2),',',-1), SUBSTRING_INDEX(SUBSTRING_INDEX(#{chooseDate},',',-2),',',-1)) <![CDATA[ <= ]]> 0
+            </if>
+                and state=1 limit #{page},#{pageSize}
+        </where>
+    </select>
+
+    <select id="queryHouseTotal" resultType="int">
+        select count(*) from mi_house
+        <where>
+            city_and_region like "%"#{cityName}"%"
+            <if test="rentalType != null">
+                and rental_type=#{rentalType}
+            </if>
+            <if test="bedNumber != null">
+                and bed_number=#{bedNumber}
+            </if>
+            <if test="peopleNumber != null">
+                and people_number<![CDATA[ >= ]]>#{peopleNumber}
+            </if>
+            <if test="houseType != null">
+                and house_type=#{houseType}
+            </if>
+            <if test="housePrice != null">
+                and house_price<![CDATA[ <= ]]>#{housePrice}
+            </if>
+            <if test="chooseDate != null">
+                and  TIMESTAMPDIFF(day,SUBSTRING_INDEX(SUBSTRING_INDEX(choose_date,',',-2),',',1), SUBSTRING_INDEX(SUBSTRING_INDEX(#{chooseDate},',',-2),',',1)) <![CDATA[ >= ]]> 0
+                and TIMESTAMPDIFF(day,SUBSTRING_INDEX(SUBSTRING_INDEX(choose_date,',',-2),',',-1), SUBSTRING_INDEX(SUBSTRING_INDEX(#{chooseDate},',',-2),',',-1)) <![CDATA[ <= ]]> 0
+            </if>
+                and state=1
+        </where>
+    </select>
+
+    <select id="queryHouse" resultType="House">
+        select * from mi_house
+        <where>
+            username=#{username}
+            <if test="title != null">
+                and title=#{title}
+            </if>
+        </where>
+    </select>
+
+    <select id="queryHouseByAdmin" resultType="House">
+        select * from mi_house
+        <where>
+            <if test="state != null">
+                state=#{state}
+            </if>
+            <if test="cityName != null">
+                and city_and_region like "%"#{cityName}"%"
+            </if>
+            <if test="username != null">
+                and username=#{username}
+            </if>
+            <if test="title != null">
+                and title=#{title}
+            </if>
+        </where>
+        limit #{page},#{pageSize}
+    </select>
+
+    <select id="queryHouseTotalByAdmin" resultType="int">
+        select count(*) from mi_house
+        <where>
+            <if test="state != null">
+                state=#{state}
+            </if>
+            <if test="cityName != null">
+                and city_and_region like "%"#{cityName}"%"
+            </if>
+            <if test="username != null">
+                and username=#{username}
+            </if>
+            <if test="title != null">
+                and title=#{title}
+            </if>
+        </where>
+    </select>
+
+    <insert id="addHouse" parameterType="House" >
+        insert into mi_house(title,rental_type,bed_number,people_number,house_type,score,comments_number,img,head_img,
+        username,house_price,city_and_region,matching_list,house_list,choose_date,`describe`,state) values
+        (#{title},#{rentalType},#{bedNumber},#{peopleNumber},#{houseType},#{score},#{commentsNumber},#{img},#{headImg},
+        #{username},#{housePrice},#{cityAndRegion},#{matchingList},#{houseList},#{chooseDate},#{describe},#{state})
+    </insert>
+
+    <update id="updateHouse" parameterType="House">
+        update mi_house set title=#{title},rental_type=#{rentalType},bed_number=#{bedNumber},people_number=#{peopleNumber},house_type=#{houseType},
+        score=#{score},comments_number=#{commentsNumber},img=#{img},head_img=#{headImg},
+        username=#{username},house_price=#{housePrice},city_and_region=#{cityAndRegion},matching_list=#{matchingList},house_list=#{houseList},
+        choose_date=#{chooseDate},`describe`=#{describe},state=#{state} where id=#{id}
+    </update>
+
+    <delete id="deleteHouse" parameterType="int">
+        delete  from mi_house where id=#{id}
+    </delete>
+</mapper>

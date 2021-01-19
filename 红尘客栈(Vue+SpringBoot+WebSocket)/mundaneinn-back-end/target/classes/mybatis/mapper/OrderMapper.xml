@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcx.mapper.OrderMapper">
+
+    <select id="queryOrderList" resultType="Order">
+        select * from mi_order
+        <where>
+            <if test="username!=null">
+                username=#{username}
+            </if>
+            <if test="customerId!=null">
+                and customer_id=#{customerId}
+            </if>
+        </where>
+    </select>
+
+    <select id="queryOrder" resultType="Order">
+        select * from mi_order where time_slot=#{timeSlot} and title=#{title} and username=#{username}
+    </select>
+
+    <select id="queryOrderByTitle" resultType="Order">
+        select * from mi_order where username=#{username} and title=#{title} and state=1
+    </select>
+
+    <insert id="addOrder" parameterType="Order">
+        insert into mi_order(time_slot,money,title,username,customer_id,state) values
+        (#{timeSlot},#{money},#{title},#{username},#{customerId},#{state})
+    </insert>
+
+    <update id="updateOrder" parameterType="Order">
+        update mi_order set time_slot=#{timeSlot},money=#{money},title=#{title},username=#{username},
+        customer_id=#{customerId},state=#{state} where id=#{id}
+    </update>
+
+    <delete id="deleteOrder" parameterType="int">
+        delete from mi_order where id=#{id}
+    </delete>
+</mapper>

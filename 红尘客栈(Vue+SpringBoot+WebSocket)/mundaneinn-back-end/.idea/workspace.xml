@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b29719ac-7b32-40b1-bbb8-37bc6536c416" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="mundaneinn-back-end" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lJyJCtti7nR5tsix6qFlb7gamf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mundaneinn-front-end" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kcx.controller" />
+      <recent name="com.kcx.pojo" />
+      <recent name="com.kcx.mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\红尘客栈\mundaneinn-back-end\src\main\resources\templates" />
+      <recent name="D:\我【文档】\Java编程\Java-idea\SpringBoot\mundaneinn-back-end\src\main\java\com\kcx\mapper" />
+      <recent name="D:\我【文档】\Java编程\Java-idea\SpringBoot\mundaneinn-back-end\src\main\resources\mybatis\mapper" />
+      <recent name="D:\我【文档】\Java编程\Java-idea\SpringBoot\mundaneinn-back-end\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MundaneinnBackEndApplication">
+    <configuration name="OrderTest.queryOrderList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mundaneinn-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kcx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kcx" />
+      <option name="MAIN_CLASS_NAME" value="com.kcx.OrderTest" />
+      <option name="METHOD_NAME" value="queryOrderList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentTest.deletePaymentById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mundaneinn-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kcx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kcx" />
+      <option name="MAIN_CLASS_NAME" value="com.kcx.PaymentTest" />
+      <option name="METHOD_NAME" value="deletePaymentById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentTest.queryPaymentByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mundaneinn-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kcx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kcx" />
+      <option name="MAIN_CLASS_NAME" value="com.kcx.PaymentTest" />
+      <option name="METHOD_NAME" value="queryPaymentByUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mundaneinn-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kcx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kcx" />
+      <option name="MAIN_CLASS_NAME" value="com.kcx.UserTest" />
+      <option name="METHOD_NAME" value="deleteUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.updateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mundaneinn-back-end" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kcx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kcx" />
+      <option name="MAIN_CLASS_NAME" value="com.kcx.UserTest" />
+      <option name="METHOD_NAME" value="updateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MundaneinnBackEndApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mundaneinn-back-end" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kcx.MundaneinnBackEndApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PaymentTest.queryPaymentByUser" />
+        <item itemvalue="JUnit.PaymentTest.deletePaymentById" />
+        <item itemvalue="JUnit.OrderTest.queryOrderList" />
+        <item itemvalue="JUnit.UserTest.deleteUser" />
+        <item itemvalue="JUnit.UserTest.updateUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b29719ac-7b32-40b1-bbb8-37bc6536c416" name="默认更改列表" comment="" />
+      <created>1607329414154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607329414154</updated>
+      <workItem from="1607329418525" duration="5854000" />
+      <workItem from="1607335357123" duration="1149000" />
+      <workItem from="1607338137747" duration="6210000" />
+      <workItem from="1607387843332" duration="17598000" />
+      <workItem from="1607417896622" duration="13467000" />
+      <workItem from="1607472658148" duration="11867000" />
+      <workItem from="1607490231456" duration="10630000" />
+      <workItem from="1607507598434" duration="11868000" />
+      <workItem from="1607559402157" duration="6146000" />
+      <workItem from="1607582253445" duration="9670000" />
+      <workItem from="1607596225091" duration="5162000" />
+      <workItem from="1607654705220" duration="2498000" />
+      <workItem from="1607664178384" duration="7036000" />
+      <workItem from="1607682721338" duration="7290000" />
+      <workItem from="1607742425472" duration="2723000" />
+      <workItem from="1607750311170" duration="13532000" />
+      <workItem from="1607770515060" duration="6082000" />
+      <workItem from="1607840852782" duration="4836000" />
+      <workItem from="1607857462441" duration="6275000" />
+      <workItem from="1607912817034" duration="13164000" />
+      <workItem from="1607944187611" duration="1393000" />
+      <workItem from="1607991413214" duration="8008000" />
+      <workItem from="1608007278962" duration="3139000" />
+      <workItem from="1608014396899" duration="11222000" />
+      <workItem from="1608077600410" duration="6212000" />
+      <workItem from="1608094209194" duration="6519000" />
+      <workItem from="1608106964908" duration="1417000" />
+      <workItem from="1608112989204" duration="2669000" />
+      <workItem from="1608117007485" duration="1407000" />
+      <workItem from="1608120347817" duration="1693000" />
+      <workItem from="1608163819157" duration="7362000" />
+      <workItem from="1608198690722" duration="7862000" />
+      <workItem from="1608258643252" duration="1162000" />
+      <workItem from="1608270049377" duration="4433000" />
+      <workItem from="1608283259733" duration="1724000" />
+      <workItem from="1608286761131" duration="4181000" />
+      <workItem from="1608357727873" duration="8306000" />
+      <workItem from="1608372914712" duration="10051000" />
+      <workItem from="1608441673561" duration="838000" />
+      <workItem from="1608448454646" duration="4576000" />
+      <workItem from="1608461315160" duration="3314000" />
+      <workItem from="1608518309675" duration="2825000" />
+      <workItem from="1608533242671" duration="1965000" />
+      <workItem from="1608541642554" duration="3256000" />
+      <workItem from="1608547922271" duration="3910000" />
+      <workItem from="1608555780486" duration="547000" />
+      <workItem from="1608596445383" duration="2830000" />
+      <workItem from="1608623053686" duration="1036000" />
+      <workItem from="1608624168190" duration="736000" />
+      <workItem from="1608633997108" duration="6542000" />
+      <workItem from="1608682526675" duration="1926000" />
+      <workItem from="1608696404504" duration="690000" />
+      <workItem from="1608708767040" duration="2291000" />
+      <workItem from="1608712440019" duration="374000" />
+      <workItem from="1608712952006" duration="1227000" />
+      <workItem from="1608769729963" duration="957000" />
+      <workItem from="1608773238872" duration="414000" />
+      <workItem from="1608864781690" duration="3661000" />
+      <workItem from="1608874974868" duration="1024000" />
+      <workItem from="1608899911228" duration="863000" />
+      <workItem from="1609040887537" duration="858000" />
+      <workItem from="1609052421389" duration="793000" />
+      <workItem from="1609070232572" duration="129000" />
+      <workItem from="1609133369663" duration="155000" />
+      <workItem from="1609138668885" duration="963000" />
+      <workItem from="1609217238651" duration="230000" />
+      <workItem from="1609239921279" duration="758000" />
+      <workItem from="1609241436400" duration="364000" />
+      <workItem from="1609735955710" duration="1536000" />
+      <workItem from="1610515336273" duration="41000" />
+      <workItem from="1610515565493" duration="16000" />
+      <workItem from="1610525516660" duration="162000" />
+      <workItem from="1610851396898" duration="12000" />
+      <workItem from="1610958863791" duration="4460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

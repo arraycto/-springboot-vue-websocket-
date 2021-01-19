@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcx.mapper.ChatMapper">
+
+    <select id="queryUserChatList" resultType="Chat">
+        select * from (select * from mi_chat where `to`=#{username} order by time desc limit  10000 ) chat  group by`from`
+    </select>
+
+    <select id="queryChatList" resultType="Chat">
+        select * from mi_chat where (`from`=#{username1} and `to` = #{username2} ) or (`from`= #{username2} and `to` = #{username1})
+    </select>
+
+    <insert id="addChat" parameterType="Chat">
+        insert into mi_chat(`from`,`to`,content,time) values(#{from},#{to},#{content},#{time})
+    </insert>
+</mapper>

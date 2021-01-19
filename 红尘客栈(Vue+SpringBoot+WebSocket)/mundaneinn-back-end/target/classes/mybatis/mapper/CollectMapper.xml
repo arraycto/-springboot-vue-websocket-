@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcx.mapper.CollectMapper">
+
+    <select id="queryUserCollections" resultType="Collect">
+        select * from mi_collect where user_id=#{userId}
+    </select>
+
+    <insert id="addCollection" parameterType="Collect">
+        insert into mi_collect(user_id,username,title) values(#{userId},#{username},#{title})
+    </insert>
+
+    <delete id="deleteCollection" parameterType="int">
+        delete from mi_collect where id=#{id}
+    </delete>
+</mapper>
